@@ -1,5 +1,11 @@
+import Experience from './Experience'
+import Hero from './Hero'
 import NavBar from './NarBar'
+import Projects from './Projects'
 
 export {
-    NavBar,
+  Experience,
+  Hero,
+  NavBar,
+  Projects,
 }

@@ -8,7 +8,7 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className='w-full flex items-center py-5 fixed top-0 z-20 bg-primary'>
+    <nav className='w-full flex items-center py-5 sticky top-0 z-[100] bg-primary shadow-[rgba(0,0,0,0.6)_0px_2px_8px_2px]'>
       <div className='w-full flex justify-between items-center ml-10 mr-10'>
         <Link to='/' className='flex items-center gap-2'>
           <p className='text-white text-[28px] font-bold flex'>
@@ -20,7 +20,8 @@ const NavBar = () => {
           {
             navLinks.map((link) => {
               return (
-                <li key={link.id} className='cursor-pointer text-[20px] text-quaternary hover:text-white'>
+                <li key={link.id} className='cursor-pointer text-[20px] text-quaternary hover:text-white border-b-2 
+                border-transparent hover:border-b-2 hover:border-white pb-px'>
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               )
@@ -28,6 +29,7 @@ const NavBar = () => {
           }
         </ul>
 
+        
         <div className='sm:hidden flex flex-1 justify-end items-center' >
           <img
             src={toggle ? close : menu}
@@ -38,7 +40,7 @@ const NavBar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 bg-gradient-to-r from-secondary to-primary absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 bg-gradient-to-t from-gray-700 to-gray-800 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
