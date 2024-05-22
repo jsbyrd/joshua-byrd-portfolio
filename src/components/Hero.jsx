@@ -20,7 +20,7 @@ const Hero = () => {
       className='relative w-full px-4 flex items-center justify-center overflow-hidden' 
       ref={sectionRef}  
     >
-      <motion.div className='text-white text-center relative bottom-[100px] z-20' style={{y: yText}}>
+      <motion.div className='text-white text-center relative bottom-[100px] z-20 bg-secondary p-4 rounded-xl' style={{y: yText}}>
         <div className='flex flex-1 justify-center items-center'>
           <h1 className='font-bold text-[60px] inline-block mx-4'>
             Hi, I&apos;m <span className='text-tertiary' >Josh</span>
