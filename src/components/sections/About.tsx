@@ -8,20 +8,26 @@ export const About = () => {
     "SQL",
     "HTML",
     "CSS",
-    "XAML",
+    "Python",
   ];
-  const frameworks = [
+  const frameworksAndTools = [
     "React",
-    "Node.js",
     ".NET",
+    "Node.js",
     "ASP.NET Core Web API",
-    "MSSQL",
     "Entity Framework Core",
-    "WPF",
+    "LINQ",
+    "SQL Server",
     "PostgreSQL",
+    "WPF",
     "Jest",
+    "Git",
+    "Azure",
+    "AWS",
+    "Docker",
+    "Redis",
+    "Jenkins",
   ];
-  const tools = ["Git", "AWS", "Docker", "Redis", "Jenkins"];
 
   return (
     <section
@@ -50,9 +56,11 @@ export const About = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-2">
-                <h4 className="font-semibold text-gray-300">Frameworks</h4>
+                <h4 className="font-semibold text-gray-300">
+                  Frameworks & Tools
+                </h4>
                 <div className="flex flex-wrap gap-2">
-                  {frameworks.map((tech, key) => (
+                  {frameworksAndTools.map((tech, key) => (
                     <span
                       key={key}
                       className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
@@ -62,7 +70,7 @@ export const About = () => {
                   ))}
                 </div>
               </div>
-              <div className="flex flex-col gap-2">
+              {/* <div className="flex flex-col gap-2">
                 <h4 className="font-semibold text-gray-300">Tools</h4>
                 <div className="flex flex-wrap gap-2">
                   {tools.map((tech, key) => (
@@ -74,7 +82,7 @@ export const About = () => {
                     </span>
                   ))}
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
@@ -82,12 +90,13 @@ export const About = () => {
               <h3 className="text-xl font-bold mb-4">🏫 Education</h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong>B.S. in Computer Science</strong>-XYZ University
-                  (2016-2020)
+                  <strong>B.S. in Computer Science</strong>- University of
+                  Central Florida (2020 - 2024)
                 </li>
                 <li>
-                  Relevant Coursework: Data Structures, Web Development, Cloud
-                  Computing...
+                  Relevant Coursework: Data Structures & Algorithms, Web
+                  Development, Database Management Systems, Multithreaded
+                  Processing, Machine Learning
                 </li>
               </ul>
             </div>
@@ -96,20 +105,24 @@ export const About = () => {
               <div className="space-y-4 text-gray-300">
                 <div>
                   <h4 className="font-semibold">
-                    Software Engineer at ABC Corp (2020-Present)
+                    Software Engineer Intern @ Acuity Brands Lighting, Inc (May
+                    2024 - Aug 2024)
                   </h4>
                   <p>
-                    Developed and maintained microservices for cloud-based
-                    applications.
+                    The main task I worked on was integrating a theme switching
+                    feature onto a React micro-frontend, allowing multiple web
+                    applications the ability to switch between light and dark
+                    modes. I also fixed bugs here and there.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold">
-                    Intern at DEF Startups (2019)
+                    Undergraduate Research Assistant (Jan 2024 - May 2024)
                   </h4>
                   <p>
-                    Assisted in building front-end components and integrating
-                    REST APIs.
+                    I mainly worked on creating robotics simulations in Unity in
+                    research on the topic of autonomous scientific laboratories
+                    for the U.S. Department of Energy
                   </p>
                 </div>
               </div>
